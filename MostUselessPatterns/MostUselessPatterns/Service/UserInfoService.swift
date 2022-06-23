@@ -20,14 +20,6 @@ class UserInfoServiceIml: UserInfoService {
     
     var urlSession: URLSession!
     
-    static func configuredService() -> UserInfoService {
-        
-        let service = UserInfoServiceIml()
-        service.urlSession = URLSession.shared
-        
-        return service
-    }
-    
     func obtainUserInfo() -> UserInfo {
         return UserInfo(name: "Gregory", age: "17")
     }
