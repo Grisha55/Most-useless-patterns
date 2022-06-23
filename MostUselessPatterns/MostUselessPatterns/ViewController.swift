@@ -10,6 +10,7 @@ import UIKit
 class ViewController: UIViewController {
 
     var alertFacotry = DefaultAlertsFactory()
+    var alertBuilder = DefaultsAlertsBuilder()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +21,10 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        let alert = alertFacotry.getAlert(by: .unexpectedErrorAlert)
+//        let alert = alertFacotry.getAlert(by: .unexpectedErrorAlert)
+//        self.present(alert, animated: true)
+        
+        let alert = alertBuilder.buildOkAlert(with: "It's ok alert", message: "It's easy")
         self.present(alert, animated: true)
     }
 
