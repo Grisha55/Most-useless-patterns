@@ -13,7 +13,7 @@ struct UserInfo {
 }
 
 protocol UserInfoService: AnyObject {
-    func obtainUserInfo(_ info: UserInfo)
+    func obtainUserInfo() -> UserInfo
 }
 
 class UserInfoServiceIml: UserInfoService {
@@ -28,8 +28,8 @@ class UserInfoServiceIml: UserInfoService {
         return service
     }
     
-    func obtainUserInfo(_ info: UserInfo) {
-        
+    func obtainUserInfo() -> UserInfo {
+        return UserInfo(name: "Gregory", age: "17")
     }
     
 }
