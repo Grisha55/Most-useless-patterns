@@ -24,7 +24,7 @@ class UserManager: UserManagerProtocol {
         
         let manager = UserManager()
         manager.userDefaults = UserDefaults.standard
-        manager.userInfoService = UserInfoServiceIml.configuredService()
+        manager.userInfoService = ServiceFacadeRelease().configureUserInfoService()
         return manager
     }
     

@@ -16,6 +16,8 @@
 		BE241815286498E900650FE5 /* DefaultAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE241814286498E900650FE5 /* DefaultAlertsFactory.swift */; };
 		BE2418172864E36A00650FE5 /* DefaultsAlertsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2418162864E36A00650FE5 /* DefaultsAlertsBuilder.swift */; };
 		BE24181B2864E73700650FE5 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24181A2864E73700650FE5 /* UserManager.swift */; };
+		BE24181E2864EC0800650FE5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24181D2864EC0800650FE5 /* AuthService.swift */; };
+		BE2418202864ECC700650FE5 /* ServiceFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE24181F2864ECC700650FE5 /* ServiceFacade.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		BE241814286498E900650FE5 /* DefaultAlertsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertsFactory.swift; sourceTree = "<group>"; };
 		BE2418162864E36A00650FE5 /* DefaultsAlertsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsAlertsBuilder.swift; sourceTree = "<group>"; };
 		BE24181A2864E73700650FE5 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		BE24181D2864EC0800650FE5 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		BE24181F2864ECC700650FE5 /* ServiceFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceFacade.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,9 @@
 				BE2418002864952900650FE5 /* SceneDelegate.swift */,
 				BE2418022864952900650FE5 /* ViewController.swift */,
 				BE24181A2864E73700650FE5 /* UserManager.swift */,
+				BE24181C2864EBE300650FE5 /* Service */,
 				BE2418192864E6E300650FE5 /* Builder */,
 				BE2418182864E6AB00650FE5 /* Factory */,
-				BE2418122864964B00650FE5 /* UserInfoService.swift */,
 				BE2418072864952D00650FE5 /* Assets.xcassets */,
 				BE2418092864952D00650FE5 /* LaunchScreen.storyboard */,
 				BE24180C2864952D00650FE5 /* Info.plist */,
@@ -90,6 +94,16 @@
 				BE2418162864E36A00650FE5 /* DefaultsAlertsBuilder.swift */,
 			);
 			path = Builder;
+			sourceTree = "<group>";
+		};
+		BE24181C2864EBE300650FE5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BE2418122864964B00650FE5 /* UserInfoService.swift */,
+				BE24181D2864EC0800650FE5 /* AuthService.swift */,
+				BE24181F2864ECC700650FE5 /* ServiceFacade.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +180,11 @@
 				BE2418032864952900650FE5 /* ViewController.swift in Sources */,
 				BE24181B2864E73700650FE5 /* UserManager.swift in Sources */,
 				BE2417FF2864952900650FE5 /* AppDelegate.swift in Sources */,
+				BE2418202864ECC700650FE5 /* ServiceFacade.swift in Sources */,
 				BE2418012864952900650FE5 /* SceneDelegate.swift in Sources */,
 				BE2418172864E36A00650FE5 /* DefaultsAlertsBuilder.swift in Sources */,
 				BE241815286498E900650FE5 /* DefaultAlertsFactory.swift in Sources */,
+				BE24181E2864EC0800650FE5 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
