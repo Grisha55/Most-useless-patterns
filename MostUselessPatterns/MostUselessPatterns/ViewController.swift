@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     var userManager = UserManager.configuredManager()
     
+    var observation: NSKeyValueObservation?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
@@ -32,8 +34,14 @@ class ViewController: UIViewController {
 //        let alert = alertFacotry.getAlert(by: .unexpectedErrorAlert)
 //        self.present(alert, animated: true)
         
-        let alert = alertBuilder.buildOkAlert(with: "It's ok alert", message: "It's easy")
-        self.present(alert, animated: true)
+        let user = userManager.obtainMainUser()
+        
+        observation = user.observe(\.info, options: .new) { updatedUser, change in
+            
+            print(updatedUser.info)
+        }
+        
+        user.info = "New info!"
     }
 
 

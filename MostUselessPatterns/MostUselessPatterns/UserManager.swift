@@ -7,8 +7,13 @@
 
 import Foundation
 
-struct User {
-    let info: UserInfo
+@objc class User: NSObject {
+    
+    @objc dynamic var info: String
+    
+    init(info: String) {
+        self.info = info
+    }
 }
 
 protocol UserManagerProtocol {
@@ -20,6 +25,10 @@ class UserManager: UserManagerProtocol {
     var userDefaults: UserDefaults!
     var userInfoService: UserInfoService!
     
+    private static let sharedUser = User(info: "First info")
+    
+    typealias Class = UserManager
+    
     class func configuredManager() -> UserManager {
         
         let manager = UserManager()
@@ -29,9 +38,13 @@ class UserManager: UserManagerProtocol {
     }
     
     func obtainMainUser() -> User {
-        let info = userInfoService.obtainUserInfo()
-        let user = User(info: info)
+        
+        let user = Class.sharedUser
         return user
+    }
+    
+    func changeUserInfo(_ info: String) {
+        Class.sharedUser.info = info
     }
     
 }
