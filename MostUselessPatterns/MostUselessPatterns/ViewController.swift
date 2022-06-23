@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol GreetingProtocol {
+    func sayHello()
+}
+
 class ViewController: UIViewController {
 
     var alertFacotry = DefaultAlertsFactory()
@@ -35,3 +39,10 @@ class ViewController: UIViewController {
 
 }
 
+// Паттерн Adapter используется тогда, когда мы используем расширения
+extension ViewController: GreetingProtocol {
+    
+    func sayHello() {
+        print("Hello")
+    }
+}
