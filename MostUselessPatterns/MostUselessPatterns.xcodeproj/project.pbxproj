@@ -14,6 +14,7 @@
 		BE24180B2864952D00650FE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE2418092864952D00650FE5 /* LaunchScreen.storyboard */; };
 		BE2418132864964B00650FE5 /* UserInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2418122864964B00650FE5 /* UserInfoService.swift */; };
 		BE241815286498E900650FE5 /* DefaultAlertsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE241814286498E900650FE5 /* DefaultAlertsFactory.swift */; };
+		BE2418172864E36A00650FE5 /* DefaultsAlertsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE2418162864E36A00650FE5 /* DefaultsAlertsBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE24180C2864952D00650FE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE2418122864964B00650FE5 /* UserInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoService.swift; sourceTree = "<group>"; };
 		BE241814286498E900650FE5 /* DefaultAlertsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAlertsFactory.swift; sourceTree = "<group>"; };
+		BE2418162864E36A00650FE5 /* DefaultsAlertsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsAlertsBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				BE2418022864952900650FE5 /* ViewController.swift */,
 				BE241814286498E900650FE5 /* DefaultAlertsFactory.swift */,
 				BE2418122864964B00650FE5 /* UserInfoService.swift */,
+				BE2418162864E36A00650FE5 /* DefaultsAlertsBuilder.swift */,
 				BE2418072864952D00650FE5 /* Assets.xcassets */,
 				BE2418092864952D00650FE5 /* LaunchScreen.storyboard */,
 				BE24180C2864952D00650FE5 /* Info.plist */,
@@ -144,6 +147,7 @@
 				BE2418032864952900650FE5 /* ViewController.swift in Sources */,
 				BE2417FF2864952900650FE5 /* AppDelegate.swift in Sources */,
 				BE2418012864952900650FE5 /* SceneDelegate.swift in Sources */,
+				BE2418172864E36A00650FE5 /* DefaultsAlertsBuilder.swift in Sources */,
 				BE241815286498E900650FE5 /* DefaultAlertsFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
