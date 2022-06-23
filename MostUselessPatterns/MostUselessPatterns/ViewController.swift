@@ -12,10 +12,14 @@ class ViewController: UIViewController {
     var alertFacotry = DefaultAlertsFactory()
     var alertBuilder = DefaultsAlertsBuilder()
     
+    var userManager = UserManager.configuredManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemPink
         
+        let user = userManager.obtainMainUser()
+        print(user)
     }
     
     override func viewDidAppear(_ animated: Bool) {
