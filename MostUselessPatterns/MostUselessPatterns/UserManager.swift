@@ -35,3 +35,8 @@ class UserManager: UserManagerProtocol {
     }
     
 }
+
+// Пример: хэндлер по работе с пуш уведомлениями, по работе с изображениями
+class UserInfoHandler {
+
+}
